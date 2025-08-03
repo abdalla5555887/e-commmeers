@@ -26,13 +26,11 @@ export class DetailsComponent {
           next: (res) => {
             this.prodata = res.data;
             // Log the response to the console for debugging
-            console.log(this.prodata);
           },
           error: (err) => {
             console.error(err);
           },
           complete: () => {
-            console.log('Product details fetched successfully');
           }
         });
       }
